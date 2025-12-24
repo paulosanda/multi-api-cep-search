@@ -1,7 +1,7 @@
 {
   "name": "paulosanda/laravel-multiple-cep-api",
   "description": "A SOLID CEP search package for Laravel with multiple providers and automatic fallback",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": ["cep", "laravel", "viacep", "brasilapi", "opencep", "address", "brazil"],
   "type": "library",
   "license": "MIT",
