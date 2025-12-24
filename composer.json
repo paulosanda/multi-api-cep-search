@@ -1,0 +1,49 @@
+{
+  "name": "paulosanda/laravel-multiple-cep-api",
+  "description": "A SOLID CEP search package for Laravel with multiple providers and automatic fallback",
+  "version": "1.0.0",
+  "keywords": ["cep", "laravel", "viacep", "brasilapi", "opencep", "address", "brazil"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paulo Sanda",
+      "email": "paulosanda@gmail.com",
+      "homepage": "https://github.com/paulosanda"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0",
+    "phpunit/phpunit": "^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PauloSanda\\MultipleCepApi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PauloSanda\\MultipleCepApi\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --testdox"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PauloSanda\\MultipleCepApi\\CepServiceProvider"
+      ],
+      "aliases": {
+        "Cep": "PauloSanda\\MultipleCepApi\\Facades\\Cep"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
